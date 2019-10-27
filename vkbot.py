@@ -2,7 +2,6 @@ import vk_api
 from vk_api.keyboard import VkKeyboard, VkKeyboardColor
 from vk_api.utils import get_random_id
 from vk_api.bot_longpoll import VkBotLongPoll, VkBotEventType
-import pymysql.cursors
 import requests
 import wikipedia
 import re
@@ -16,16 +15,6 @@ osinniki = [53.577475, 53.658998, 87.277901, 87.451449]
 lenin = [53.598598, 87.338041]
 lion = [53.598330, 87.330634]
 pandf = [53.600084, 87.337079]
-"""
-def get_connection():
-    connection = pymysql.connect(host='you_host',
-                                 user='you_user',
-                                 password='you_password',
-                                 db='you_db'
-                                 charset='utf8mb4',
-                                 cursorclass=mymysql.cursors.DictCursor)
-    return connection
-"""
 vk_session = vk_api.VkApi(token="84f5135f5087af2ad34de6fa05a40ea44d4d6b70364fbc9ebd519860233eeab6bce5b7bc00d2d951dc908")
 vk = vk_session.get_api()
 longpoll = VkBotLongPoll(vk_session, "2789c566")
