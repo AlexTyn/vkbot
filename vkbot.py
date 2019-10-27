@@ -28,7 +28,7 @@ def get_connection():
 """
 vk_session = vk_api.VkApi(token="84f5135f5087af2ad34de6fa05a40ea44d4d6b70364fbc9ebd519860233eeab6bce5b7bc00d2d951dc908")
 vk = vk_session.get_api()
-longpoll = VkBotLongPoll(vk_session, "110952452")
+longpoll = VkBotLongPoll(vk_session, "2789c566")
 n = 0
 k = 0
 s = 0
